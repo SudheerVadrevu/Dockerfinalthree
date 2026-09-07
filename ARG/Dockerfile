@@ -1,5 +1,5 @@
 ARG version
-FROM almalinux:${version:-7}
+FROM almalinux:${version:-10}
 ARG sudheer=goodboy
 ARG pranavi=badgirl
 RUN echo "sudheer is ${sudheer} pranavi ni ${pranavi} "
