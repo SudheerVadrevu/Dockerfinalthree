@@ -3,8 +3,8 @@ EXPOSE 8080
 RUN useradd expense
 RUN mkdir /opt/server
 RUN chown  expense:expense -R /opt/server
-WORKDIR /opt/server/
-COPY *.js /opt/server/
+WORKDIR /opt/server
+COPY *.js /opt/server
 COPY package.json .
 RUN npm install
 CMD ["node","index.js"]
