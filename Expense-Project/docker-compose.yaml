@@ -17,7 +17,7 @@ services:
     depends_on:
       - mysql
     ports:
-      -8080:8080
+      - 8080:8080
   
   frontend:
     image: frontend:0.0
@@ -25,4 +25,4 @@ services:
     depends_on:
       - backend
     ports:
-      -80:80
+      - 80:80
