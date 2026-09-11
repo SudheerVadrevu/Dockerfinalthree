@@ -3,12 +3,18 @@ networks:
   default: 
    name: sudha
    external: true
+volumes:
+  sudha:
+    external: true
 
 services:
 
   mysql:
     image: mysql:0.0
     container_name: mysql
+    -source: sudha
+    target: /var/lib/mysql
+    type: volume
   
   backend:
     image: backend:0.0
