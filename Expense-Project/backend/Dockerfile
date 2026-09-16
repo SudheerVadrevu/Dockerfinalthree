@@ -8,4 +8,5 @@ WORKDIR /opt/server
 COPY *.js /opt/server
 COPY package.json .
 RUN npm install
+USER expense
 CMD ["node","index.js"]
