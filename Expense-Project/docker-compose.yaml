@@ -2,7 +2,7 @@ name: expense
 networks:
   default: 
    name: sudha
-   external: true
+   external: false
 volumes:
   sudha:
     external: true
